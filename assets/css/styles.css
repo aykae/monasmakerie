@@ -1,0 +1,33 @@
+body {
+    margin-top: 20%;
+    text-align:center;
+    background-color: #e7eaf3
+}
+
+.main-body {
+    width:80%;
+    min-height:100%;
+    background-color: #e7e7e7;
+    margin:0 auto;
+    text-align:center;
+    flex: 1 1 auto;
+}
+
+.footer {
+    position:absolute;
+    width:80%;
+    background-color: #e7e7e7;
+    margin:0 auto;
+    height:100px;    
+    bottom:0;
+    text-align:center;
+    display: flex;
+}
+
+
+
+
+
+
+
+    

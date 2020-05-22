@@ -1,0 +1,62 @@
+{
+    "services":[
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+{
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        },
+
+        {
+            "name" : "Standard Facial",
+            "description" : "This is a standard facial",
+            "duration" : "60",
+            "price" : "90"
+        }
+    ]
+}
