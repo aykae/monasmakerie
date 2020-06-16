@@ -37,6 +37,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	 -ms-animation: fadein 2s; /* Internet Explorer */
+		 -o-animation: fadein 2s; /* Opera < 12.1 */
+		 animation: fadein 2s;
 }
 
 ol, ul {
@@ -2947,31 +2952,31 @@ body.landing #page-wrapper {
 	padding-top: 5px;
 }
 
-	#header h1 {
-		color: inherit;
-		height: inherit;
-		left: 1.25em;
-		line-height: inherit;
-		margin: 0;
-		padding: 0;
-		position: absolute;
-		top: 0;
-	}
+#header h1 {
+	color: inherit;
+	height: inherit;
+	left: 1.25em;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+}
 
-		#header h1 a {
-			color: #fff;
-			font-weight: 400;
-			border: 0;
-		}
+#header h1 a {
+	color: #fff;
+	font-weight: 400;
+	border: 0;
+}
 
-	#header nav {
-		height: inherit;
-		line-height: inherit;
-		position: absolute;
-		right: 0.75em;
-		top: 0;
-		vertical-align: middle;
-	}
+#header nav {
+	height: inherit;
+	line-height: inherit;
+	position: absolute;
+	right: 0.75em;
+	top: 0;
+	vertical-align: middle;
+}
 
 		#header nav > ul {
 			list-style: none;
@@ -3170,16 +3175,13 @@ body.landing #page-wrapper {
 	background-image: url("./images/overlay.png"), url("../../images/banner.jpg");
 	background-position: top left,						center center;
 	background-repeat: repeat, no-repeat;
-		-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-		   -moz-animation: fadein 2s; /* Firefox < 16 */
-			-ms-animation: fadein 2s; /* Internet Explorer */
-		   	 -o-animation: fadein 2s; /* Opera < 12.1 */
-				animation: fadein 2s;
 	background-size: auto,	cover;
 	color: #fff;
 	padding: 12em 0 20em 0;
 	text-align: center;
 }
+
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -3257,24 +3259,14 @@ body.landing #page-wrapper {
 	padding: 4em 0;
 }
 
-	#main > header {
-		text-align: center;
-		margin: 0 0 3em 0;
-	}
-
-		#main > header h2 {
-			font-size: 2.75em;
-			margin: 0;
-		}
-
-		#main > header p {
-			border-top: solid 2px #e5e5e5;
-			color: #777;
-			display: inline-block;
-			font-style: normal;
-			margin: 1em 0 0 0;
-			padding: 1em 0 1.25em 0;
-		}
+#main > header p {
+	border-top: solid 2px #e5e5e5;
+	color: #777;
+	display: inline-block;
+	font-style: normal;
+	margin: 1em 0 0 0;
+	padding: 1em 0 1.25em 0;
+}
 
 body.landing #main {
 	margin-top: -14em;
@@ -3330,10 +3322,12 @@ body.landing #main {
 /* CTA */
 
 #cta {
-	background: #fef5f6;
+	background: #ffe3e6;
 	color: #666;
 	padding: 3.5em 0 4em 0;
 	text-align: center;
+/*	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2); */
+	box-shadow: 0 -3em 3em rgba(0,0,0,0.1), 
 }
 
 	#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
@@ -3871,6 +3865,17 @@ body.landing #main {
 					padding-top: 0;
 				}
 
+.profile img {
+	border-radius: 100%;
+	display: flex;
+	flex: 0 0 150px;
+	height: 150px;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	width: 150px;
+}
+				
 	/* Box */
 
 		.box {
