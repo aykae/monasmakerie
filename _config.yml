@@ -1,2 +1,6 @@
 baseurl: ""
 permalink: /:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
