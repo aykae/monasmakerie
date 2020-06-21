@@ -1,90 +1,98 @@
-<!DOCTYPE HTML>
-<!--
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Mona's Makerie</title>
-		<link rel="icon" href="images/logo1.png">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body class="landing is-preload">
-		<div id="page-wrapper">
-			<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="/"><img src="images/logo1.png" width="40" /></a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="">Home</a></li>
-						<li>
-							<a href="/services" class="icon solid fa-angle-down">Services</a>
-							<ul>
-								<li><a href="/services#makeup">Makeup</a></li>
-								<li><a href="/services#facials">Facial Treatments</a></li>
-								<li><a href="/services#waxing">Waxing</a></li>
-								<li><a href="/services#devices">Facial Devices</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</header>
+---
+layout: base
+title: index
+---
+<header id="header" class="alt">
+	<h1><a href="/"><img src="images/logo1.png" width="40" /></a></h1>
+	<nav id="nav">
+		<ul>
+			<li><a href="">Home</a></li>
+		</ul>
+	</nav>
+</header>
 
-			<!-- Banner -->
-			<section id="banner">
-				<img src="images/logo1.png" width="150" />
-				<h2>Mona's Makerie</h2>
-				<p>Skincare and Makeup Boutique</p>
-				<ul class="actions special">
-					<li><a href="#" class="button primary">Sign Up</a></li>
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
-			</section>
+<!-- Banner -->
+<section id="banner">
+	<img src="images/logo1.png" width="150" />
+	<h2>Mona's Makerie</h2>
+	<p>Skincare and Makeup Boutique</p>
+</section>
 
-			<!-- Main -->
-			<section id="main" class="container">
-				<section class="box special">
-					<!--
-					<div id="profile">
-						<img id="pfp" src="images/profile.jpeg" />
-					</div>
-					-->
-					<header class="major">
-						<h2>Meet Mona,
-						<br />
-						Your Skincare Therapist And Makeup Artist.</h2>
-						<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
-						adipiscing nunc adipiscing. Condimentum turpis massa.</p>
-					</header>
-					<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span> -->
-				</section>
-
-
-			<!-- Footer -->
-			<footer id="footer">
-                <ul class="icons">
-                    <li><a href="https://www.facebook.com/Monas-Makerie-LLC-489182424446135/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-                    <li><a href="https://instagram.com/monasmakerie" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Mona's Makerie LLC. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </footer>
-
+<!-- Main -->
+<section id="main" class="container">
+	<section class="box special">
+		<!--
+		<div id="profile">
+			<img id="pfp" src="images/profile.jpeg" />
 		</div>
+		-->
+		<header class="major">
+			<h2>Meet Mona,
+			<br />
+			Your Skincare Therapist And Makeup Artist.</h2>
+			<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br />
+			adipiscing nunc adipiscing. Condimentum turpis massa.</p>
+		</header>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/fx.js"></script>
-
-	</body>
-</html>
+		<div id="waxing" class="box">
+			<h2>Waxing</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.wax %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name | capitalize }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<br>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>	
+		
+		<div id="facials" class="box">
+			<h2>Facials</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.facials %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name | capitalize }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<br>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>
+	
+		<div id="makeup" class="box">
+			<h2>Makeup Services</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.makeup %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name | capitalize }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<br>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>
+	
+		<div id="devices" class="box">		
+			<h2>Devices</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.devices %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name | capitalize }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<br>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>
+		<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span> -->
+	</section>
+</section>

@@ -1,14 +1,27 @@
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <!DOCTYPE HTML>
 <html>
 	<head>
-	    <title>{{ page.title }} | Mona's Makerie</title>
+        {% if page.title == "index" %}
+        <title>Mona's Makerie</title>
+        {% else %}
+        <title>{{ page.title }} | Mona's Makerie</title>
+        {% endif %}
+        <link rel="icon" href="../../images/logo1.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css"/>
     </head>
+    {% if page.title == "index" %}
+    <body class="landing is-preload">
+    {% else %}
     <body class="is-preload">
+    {% endif %}
 		<div id="page-wrapper">
-            {% include nav.html %}
             {{ content }}
             
             <!-- Footer -->
