@@ -2936,8 +2936,8 @@ body.landing #page-wrapper {
 }
 
 #header {
-	background: #b3b3b3;
-	color: #bbb;
+	background: #ffffff;
+	color: #000000;
 	cursor: default;
 	height: 3.25em;
 	left: 0;
@@ -3002,7 +3002,7 @@ body.landing #page-wrapper {
 				}
 
 				#header nav > ul > li a:not(.button) {
-					color: #fff;
+					color: #000000;
 					display: inline-block;
 					text-decoration: none;
 					border: 0;
@@ -3074,7 +3074,7 @@ body.landing #page-wrapper {
 		-ms-animation: none;
 		animation: none;
 		background: none;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgb(255, 255, 255);
 		position: absolute;
 	}
 
@@ -3681,7 +3681,7 @@ body.landing #main {
 
 }
 
-#main.message {
+.message {
 	text-align:right;
 }
 
@@ -3694,21 +3694,21 @@ body.landing #main {
 		#message p {
 			float: left;
 		}
+
+		div.message-container {
+			width: 100% !important;
+		}
 		
-		#main.message {
-			text-align: center;
-		}
-
-		#message-text {
-			text-align: center;
-		}
-
-		#main.profile {
-			width: 0%;
-			display: hidden;		
+		.message {
+			text-align: left;
 		}
 
 		#message img {
+			display: none;
+			width: 0px;
+		}
+
+		div.profile {
 			display: none;
 		}
 
