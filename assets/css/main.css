@@ -3681,11 +3681,36 @@ body.landing #main {
 
 }
 
+#main.message {
+	text-align:right;
+}
+
 /* Mobile */
 
 @media screen and (max-width: 736px) {
 
 	/* Basic */
+		
+		#message p {
+			float: left;
+		}
+		
+		#main.message {
+			text-align: center;
+		}
+
+		#message-text {
+			text-align: center;
+		}
+
+		#main.profile {
+			width: 0%;
+			display: hidden;		
+		}
+
+		#message img {
+			display: none;
+		}
 
 		body, input, select, textarea {
 			font-size: 11pt;
