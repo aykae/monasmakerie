@@ -17,64 +17,40 @@ title: Mona's Makerie
 			<img id="pfp" src="images/profile.jpeg" />
 		</div>
 		-->
-		<p style="font-size: 60px; margin: 0 0 0 0;"><b>Mona's Menu</b></p>
+		<p style="font-size: 60px; margin: 0 0 0 0;"><b>A Message from Mona:</b></p>
 		<hr style="margin: auto; padding-top: 30px;" width="300px">
-
-		<div id="makeup" style="padding:40px;">
-			<h2>Makeup</h2>
-			<hr>
-			<div class="row-6 row-12-mobilep">
-				{% for item in site.data.pricing.makeup %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
+		<br/>
+		<div class="container" style="margin-right: 0px;">
+			<div class="row">
+				<div style="float: left; width:35%; border-radius: 25px;">
+					<img style="border-radius: 10px;" src="images/profile.jpeg" width="400" />
 				</div>
-				<p></p>
-				{% endfor %}
+				<div style="float: left; width:65%; text-align: right;">
+					<div style="font-size: 27px;">
+						<p>Seven years ago, I founded <b>Mona’s Makerie</b> with the fundamental belief that beauty is from within and that the ultimate role of the professional is to listen, discover, and invoke the glam in you.</p>
+						<p>Our mission at <b>Mona's Makerie</b> is to create a more confident version of YOU.</p>
+						<p>Excellence is the code we go by, so expect us to use the best products on the market, to receive the ultimate attention and respect you deserve, and to always leave our boutique a bit more educated on the uniqueness of you and your skin.</p>
+						<p>At <b>Mona's Makerie</b> . . . it's personal!</p>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="facials" style="padding:40px;">
-			<h2>Facials</h2>
-			<hr>
-			<div class="row-6 row-12-mobilep">
-				{% for item in site.data.pricing.facials %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
-				</div>
-				<p></p>
-				{% endfor %}
-			</div>
-		</div>
-	
-		<div id="devices" style="padding:40px;">		
-			<h2>Devices</h2>
-			<hr>
-			<div class="row-6 row-12-mobilep">
-				{% for item in site.data.pricing.devices %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
-				</div>
-				<p></p>
-				{% endfor %}
-			</div>
-		</div>
-
-		<div id="waxing" style="padding:40px;">
-			<h2>Waxing</h2>
-			<hr>
-			<div class="row-6 row-12-mobilep">
-				{% for item in site.data.pricing.wax %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
-				</div>
-				<p></p>
-				{% endfor %}
-			</div>
-		</div>	
-		<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span> -->
 	</section>
+</section>
+<section id="cta">
+
+	<h2>Sign up to receive exclusive email updates!</h2>
+	<p></p>
+
+	<form name="subscribe" method="POST" data-netlifly="true" action="/">
+		<div class="row gtr-50 gtr-uniform">
+			<div class="col-8 col-12-mobilep">
+				<input type="email" name="email" id="email" placeholder="Email Address" />
+			</div>
+			<div class="col-4 col-12-mobilep">
+				<input type="submit" value="Sign Up" class="fit" />
+			</div>
+		</div>
+	</form>
+
 </section>
