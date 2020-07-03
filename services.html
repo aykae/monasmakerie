@@ -1,0 +1,79 @@
+---
+layout: base
+title: Services
+---
+
+<!-- Main -->
+<section id="main" class="container">
+	<header>
+		<h2>Services</h2>
+		<p>Pricing for all available servies.</p>
+	</header>
+
+    <section class="box special">
+		<!--
+		<div id="profile">
+			<img id="pfp" src="images/profile.jpeg" />
+		</div>
+		-->
+		<p style="font-size: 60px; margin: 0 0 0 0;"><b>Mona's Menu</b></p>
+		<hr style="margin: auto; padding-top: 30px;" width="300px">
+
+		<div id="makeup" style="padding:40px;">
+			<h2>Makeup</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.makeup %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div id="facials" style="padding:40px;">
+			<h2>Facials</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.facials %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>
+	
+		<div id="devices" style="padding:40px;">		
+			<h2>Devices</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.devices %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>
+
+		<div id="waxing" style="padding:40px;">
+			<h2>Waxing</h2>
+			<hr>
+			<div class="row-6 row-12-mobilep">
+				{% for item in site.data.pricing.wax %}
+				<div style="clear: both;">
+					<h3 style="float: left;">{{ item.name }}</h3>
+					<h3 style="float: right;">${{ item.price }}</h3>
+				</div>
+				<p></p>
+				{% endfor %}
+			</div>
+		</div>	
+		<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span> -->
+	</section>
+</section>

@@ -30,6 +30,13 @@
     <body class="is-preload">
     {% endif %}
 		<div id="page-wrapper">
+            {% if page.title == "Mona's Makerie" %}
+            <header id="header" class="alt">
+            {% else %}
+            <header id="header">
+            {% endif %}
+                {% include nav.html %}
+            </header>
             {{ content }}
             
             <!-- Footer -->
