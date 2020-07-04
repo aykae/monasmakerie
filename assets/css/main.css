@@ -3691,6 +3691,10 @@ body.landing #main {
 
 	/* Basic */
 		
+		section.message-section {
+			margin-top: 0px !important;
+		}
+
 		#message p {
 			float: left;
 		}
