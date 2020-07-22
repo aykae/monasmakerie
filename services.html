@@ -23,8 +23,15 @@ title: Services
 					</div>
 				</div>
 				<div class="row-6 row-12-mobilep" style="text-align: left;">
-					<h4><b>60 minutes</b></h4>
-					<p>An introductory facial tailored to the individual's skin type and needs. To maintain a healthy and clear complexion, we use a customized selection of Sothys products -in a multi-step process- addressing the current need of your skin.</p>
+					{% if item.time %}
+					<h4><b>{{ item.time }} minutes</b></h4>
+					{% endif %}
+
+					{% if item.description %}
+						<p>{{ item.description }}</p>
+					{% else %}
+						</br>		
+					{% endif %}
 				</div>
 			{% endfor %}
 		</div>
@@ -34,11 +41,25 @@ title: Services
 			<hr>
 			<div class="row-6 row-12-mobilep">
 				{% for item in site.data.pricing.facials %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
-				</div>
-				<p></p>
+					<div id="service-title" class="row-6 row-12-mobilep" style="height:70px;">
+						<div class="col-9">
+							<h3 style="float: left;">{{ item.name }}</h3>
+						</div>
+						<div class="col-9">
+							<h3 style="float: right;">${{ item.price }}</h3>
+						</div>
+					</div>
+					<div class="row-6 row-12-mobilep" style="text-align: left;">
+						{% if item.time %}
+						<h4><b>{{ item.time }} minutes</b></h4>
+						{% endif %}
+
+						{% if item.description %}
+							<p>{{ item.description }}</p>
+						{% else %}
+							</br>		
+						{% endif %}
+					</div>
 				{% endfor %}
 			</div>
 		</div>
@@ -48,11 +69,25 @@ title: Services
 			<hr>
 			<div class="row-6 row-12-mobilep">
 				{% for item in site.data.pricing.devices %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
-				</div>
-				<p></p>
+					<div id="service-title" class="row-6 row-12-mobilep" style="height:70px;">
+						<div class="col-9">
+							<h3 style="float: left;">{{ item.name }}</h3>
+						</div>
+						<div class="col-9">
+							<h3 style="float: right;">${{ item.price }}</h3>
+						</div>
+					</div>
+					<div class="row-6 row-12-mobilep" style="text-align: left;">
+						{% if item.time %}
+						<h4><b>{{ item.time }} minutes</b></h4>
+						{% endif %}
+
+						{% if item.description %}
+							<p>{{ item.description }}</p>
+						{% else %}
+							</br>		
+						{% endif %}
+					</div>
 				{% endfor %}
 			</div>
 		</div>
@@ -62,11 +97,25 @@ title: Services
 			<hr>
 			<div class="row-6 row-12-mobilep">
 				{% for item in site.data.pricing.wax %}
-				<div style="clear: both;">
-					<h3 style="float: left;">{{ item.name }}</h3>
-					<h3 style="float: right;">${{ item.price }}</h3>
-				</div>
-				<p></p>
+					<div id="service-title" class="row-6 row-12-mobilep" style="height:70px;">
+						<div class="col-9">
+							<h3 style="float: left;">{{ item.name }}</h3>
+						</div>
+						<div class="col-9">
+							<h3 style="float: right;">${{ item.price }}</h3>
+						</div>
+					</div>
+					<div class="row-6 row-12-mobilep" style="text-align: left;">
+						{% if item.time %}
+						<h4><b>{{ item.time }} minutes</b></h4>
+						{% endif %}
+
+						{% if item.description %}
+							<p>{{ item.description }}</p>
+						{% else %}
+							</br>		
+						{% endif %}
+					</div>
 				{% endfor %}
 			</div>
 		</div>	
