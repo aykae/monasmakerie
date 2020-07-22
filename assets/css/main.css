@@ -1731,6 +1731,7 @@ code {
 			align-items: stretch;
 		}
 
+
 			.row > * {
 				box-sizing: border-box;
 			}
@@ -3418,9 +3419,6 @@ body.landing #main {
 			font-size: 11pt;
 		}
 
-		#service-title {
-			height: 50px !important;
-		}
 
 	/* Header */
 
@@ -3468,6 +3466,11 @@ body.landing #main {
 		body, input, select, textarea {
 			font-size: 11pt;
 		}
+
+		#service-title {
+			height: 50px !important;
+		}
+
 
 		h2 br, h3 br, h4 br, h5 br, h6 br {
 			display: none;
