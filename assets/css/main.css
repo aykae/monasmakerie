@@ -744,7 +744,6 @@ code {
 	}
 
 	@media screen and (max-width: 1280px) {
-
 		.row {
 			display: flex;
 			flex-wrap: wrap;
@@ -3400,6 +3399,7 @@ body.landing #main {
 			font-size: 13pt;
 		}
 
+
 	/* Banner */
 
 		#banner {
@@ -3416,6 +3416,10 @@ body.landing #main {
 
 		body, input, select, textarea {
 			font-size: 11pt;
+		}
+
+		#service-title {
+			height: 50px !important;
 		}
 
 	/* Header */
@@ -3445,7 +3449,6 @@ body.landing #main {
 		body, input, select, textarea {
 			font-size: 11pt;
 		}
-
 }
 
 /* Narrower */
