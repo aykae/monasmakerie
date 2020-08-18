@@ -2258,7 +2258,7 @@ input[type="radio"] + label:before {
 	background: #fff;
 	border-radius: 6px;
 	box-shadow: 0 2px 0 0 #e5e5e5;
-	margin: 0 0 2em 0;
+	margin: 0 0 0em 0;
 	padding: 3em;
 }
 
@@ -2752,7 +2752,7 @@ input[type="button"],
 	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	background-color: #666;
-	border-radius: 6px;
+	border-radius: 10px;
 	border: 0;
 	color: #ffffff;
 	cursor: pointer;
@@ -3759,7 +3759,7 @@ body.landing #main {
 	/* Box */
 
 		.box {
-			margin: 1em;
+			margin: 0em;
 			overflow-x: hidden;
 			padding: 2em 2em !important;
 		}
