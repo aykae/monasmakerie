@@ -2760,7 +2760,7 @@ input[type="button"],
 	font-weight: 400;
 	height: 3em;
 	line-height: 3em;
-	padding: 0 2em;
+	padding: 0 15px;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
@@ -2884,6 +2884,17 @@ input[type="button"],
 		cursor: default;
 		opacity: 0.25;
 	}
+
+.button-lg {
+	height: 4em;
+	line-height: 4em;
+	font-size: 30;
+}
+
+.buttons a {
+	font-size: 25px;
+}
+
 
 /* Header */
 
