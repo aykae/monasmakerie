@@ -2268,6 +2268,10 @@ input[type="radio"] + label:before {
 	padding: 30px;
 }
 
+.box a p {
+	color: black
+}
+
 .box > :last-child {
 	margin-bottom: 0;
 }
