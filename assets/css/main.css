@@ -4007,6 +4007,10 @@ body.landing #main {
 	line-height: normal;
 }
 
+#waxing, #makeup, #facials, #devices, h3, h4{
+	padding-left: 0;
+}
+
 /*
 .fade-in {
 	animation: fadeIn ease 1.5s;
