@@ -3008,6 +3008,8 @@ body.landing #page-wrapper {
 			#header nav > ul > li {
 				display: inline-block;
 				padding-left: 0;
+				font-size: large;
+				font-weight: bolder;
 			}
 
 				#header nav > ul > li > ul {
@@ -3489,7 +3491,6 @@ body.landing #main {
 		}
 
 		#service-title {
-			height: 50px !important;
 		}
 
 
