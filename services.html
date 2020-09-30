@@ -18,13 +18,10 @@ title: Services
 					<div class="col-9">
 						<h3 style="float: left;">{{ item.name }}</h3>
 					</div>
-					<div class="col-9">
-						<h3 style="float: right;">${{ item.price }}</h3>
-					</div>
 				</div>
-				<div class="row-6 row-12-mobilep" style="text-align: left;">
+				<div class="row-6 row-12-mobilep" style="text-align: left; height: 30px">
 					{% if item.time %}
-					<h4><b>{{ item.time }} minutes</b></h4>
+						<h4><b>${{ item.price }} | </b><b>{{ item.time }} minutes</b></h4>
 					{% endif %}
 
 					{% if item.description %}
@@ -33,6 +30,7 @@ title: Services
 						</br>		
 					{% endif %}
 				</div>
+				<hr style="width:50%; text-align: center; margin-left:auto; margin-right: auto;">
 			{% endfor %}
 		</div>
 
@@ -41,17 +39,14 @@ title: Services
 			<hr>
 			<div class="row-6 row-12-mobilep">
 				{% for item in site.data.pricing.facials %}
-					<div id="service-title" class="row-6 row-12-mobilep" style="height:70px;">
+					<div id="service-title" class="row-6 row-12-mobilep">
 						<div class="col-9">
 							<h3 style="float: left;">{{ item.name }}</h3>
 						</div>
-						<div class="col-9">
-							<h3 style="float: right;">${{ item.price }}</h3>
-						</div>
 					</div>
-					<div class="row-6 row-12-mobilep" style="text-align: left;">
+					<div class="row-6 row-12-mobilep" style="text-align: left">
 						{% if item.time %}
-						<h4><b>{{ item.time }} minutes</b></h4>
+						<h4><b>${{ item.price }} | </b><b>{{ item.time }} minutes</b></h4>
 						{% endif %}
 
 						{% if item.description %}
@@ -60,6 +55,7 @@ title: Services
 							</br>		
 						{% endif %}
 					</div>
+					<hr style="width:50%; text-align: center; margin-left:auto; margin-right: auto;">
 				{% endfor %}
 			</div>
 		</div>
@@ -73,13 +69,10 @@ title: Services
 						<div class="col-9">
 							<h3 style="float: left;">{{ item.name }}</h3>
 						</div>
-						<div class="col-9">
-							<h3 style="float: right;">${{ item.price }}</h3>
-						</div>
 					</div>
-					<div class="row-6 row-12-mobilep" style="text-align: left;">
+					<div class="row-6 row-12-mobilep" style="text-align: left">
 						{% if item.time %}
-						<h4><b>{{ item.time }} minutes</b></h4>
+						<h4><b>${{ item.price }} | </b><b>{{ item.time }} minutes</b></h4>
 						{% endif %}
 
 						{% if item.description %}
@@ -88,6 +81,7 @@ title: Services
 							</br>		
 						{% endif %}
 					</div>
+					<hr style="width:50%; text-align: center; margin-left:auto; margin-right: auto;">
 				{% endfor %}
 			</div>
 		</div>
