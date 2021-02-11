@@ -1,6 +1,6 @@
 # Mona's Makerie
 Website for the Mona's Makerie Business
 
-Made with Jekyll and with a design from html5up.net
+Made with [Jekyll](https://jekyllrb.com/) and with a design from [html5up.net](html5up.net)
 
 www.MonasMakerie.com
