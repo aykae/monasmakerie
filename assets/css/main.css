@@ -3499,10 +3499,15 @@ body.landing #main {
 		#service-title {
 		}
 
-
+        
 		h2 br, h3 br, h4 br, h5 br, h6 br {
 			display: none;
 		}
+        
+        /* AKR */
+        #device-desc br {
+            display: block;
+        }
 
 	/* Section/Article */
 

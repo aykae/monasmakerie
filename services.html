@@ -72,11 +72,11 @@ title: Services
 					</div>
 					<div class="row-6 row-12-mobilep" style="text-align: left">
 						{% if item.time %}
-						<h4><b>${{ item.price }} | </b><b>{{ item.time }} minutes</b></h4>
+						<h4><b>{{ item.price }} | </b><b>{{ item.time }} minutes</b></h4>
 						{% endif %}
 
 						{% if item.description %}
-							<h4>{{ item.description }}</h4>
+							<h4 id="device-desc">{{ item.description }}</h4>
 						{% else %}
 							</br>		
 						{% endif %}
