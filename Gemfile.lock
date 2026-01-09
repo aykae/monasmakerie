@@ -22,6 +22,9 @@ GEM
     google-protobuf (4.28.0-x86_64-linux)
       bigdecimal
       rake (>= 13)
+    google-protobuf (4.28.0-x86_64-linux)
+      bigdecimal
+      rake (>= 13)
     http_parser.rb (0.8.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
@@ -67,7 +70,7 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rexml (3.3.7)
+    rexml (3.3.9)
     rouge (4.3.0)
     safe_yaml (1.0.5)
     sass-embedded (1.78.0-arm64-darwin)
