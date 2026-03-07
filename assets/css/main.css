@@ -4029,6 +4029,30 @@ body.landing #main {
 	padding-left: 0;
 }
 
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.brands-grid a {
+	border-bottom: none !important;
+}
+
+.brand img {
+  max-width: 150px;
+  padding: 5%;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.brand img:hover {
+  opacity: 1;
+}
+
+
 /*
 .fade-in {
 	animation: fadeIn ease 1.5s;

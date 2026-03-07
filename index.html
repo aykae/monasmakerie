@@ -38,8 +38,18 @@ title: Mona's Makerie
 		</div>
 	</form>
 
-
 </section>
 
+<section style="margin: 5%;">
+
+    <div class="brands-grid">
+      {% for brand in site.data.brands %}
+        <a href="{{ brand.url }}" class="brand" target="_blank">
+          <img src="{{ brand.logo }}" alt="{{ brand.name }}" spellcheck="false">
+        </a>
+      {% endfor %}
+    </div>
+
+</section>
 
 
